@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Inner Wisdom - Marketing Website
 
-## Getting Started
+Marketing website for the Inner Wisdom mobile app (iOS/Android). Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🌟 Features
+
+- **Static Export**: Can be deployed to any static hosting (Vercel, Netlify, GitHub Pages)
+- **SEO Optimized**: Proper metadata, Open Graph, semantic HTML
+- **Mobile-First**: Responsive design that works on all devices
+- **Fast**: No client-side JavaScript required for most pages
+- **Accessible**: Semantic HTML structure
+
+## 📄 Pages
+
+| Page | Route | Description |
+|------|-------|-------------|
+| Landing | `/` | Main marketing page with all sections |
+| Privacy Policy | `/privacy` | Full privacy policy for App Store compliance |
+| Terms of Service | `/terms` | Terms of service for App Store compliance |
+| Support | `/support` | Contact info, FAQ, and help resources |
+
+## 🎨 Design System
+
+Colors are based on the mobile app's theme (`app_theme.dart`):
+
+- **Primary (Cosmic)**: `#1a1a2e` - Deep cosmic purple/blue
+- **Accent (Gold)**: `#d4af37` - Celestial gold
+- **Secondary (Mystic)**: `#6c5ce7` - Mystic purple
+- **Background**: `#0a0a14` - Deep space black
+- **Text Primary**: `#F5F5F5` - Light gray
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Create production build
+npm run build
 
-## Learn More
+# The static files will be in the `out` folder
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Local Production Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# After building, you can preview with any static server
+npx serve out
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── globals.css        # Global styles + Tailwind
+│   ├── layout.tsx         # Root layout with Header/Footer
+│   ├── page.tsx           # Landing page
+│   ├── privacy/
+│   │   └── page.tsx       # Privacy Policy
+│   ├── terms/
+│   │   └── page.tsx       # Terms of Service
+│   └── support/
+│       └── page.tsx       # Support/Contact
+├── components/
+│   ├── Header.tsx         # Navigation header
+│   ├── Footer.tsx         # Site footer
+│   ├── Section.tsx        # Section wrapper components
+│   ├── PricingCards.tsx   # Pricing comparison cards
+│   ├── FAQ.tsx            # FAQ accordion
+│   └── index.ts           # Component exports
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Tailwind (`tailwind.config.ts`)
+
+Custom colors, fonts, and animations are defined to match the mobile app's design system.
+
+### Next.js (`next.config.ts`)
+
+Configured for static export with `output: "export"`.
+
+## 📱 App Store Requirements
+
+This website satisfies Apple's App Store requirements for:
+
+- ✅ Privacy Policy (accessible URL)
+- ✅ Terms of Service
+- ✅ Support/Contact page with email
+- ✅ App description and features
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Static Hosting (Netlify, GitHub Pages, etc.)
+
+1. Run `npm run build`
+2. Upload the `out` folder to your hosting provider
+
+### Custom Domain
+
+Update the URLs in:
+- `src/app/layout.tsx` (metadata URLs)
+- Individual page metadata
+
+## 📝 Customization
+
+### Update Company Info
+
+Search for "Your Company Name" and "support@innerwisdomapp.com" to replace with your actual company details.
+
+### Update Pricing
+
+Edit `src/components/PricingCards.tsx` to change pricing tiers.
+
+### Update Content
+
+All page content is directly in the page files for easy editing.
+
+## 📄 License
+
+Private - All rights reserved.
+
+---
+
+Built with ❤️ for Inner Wisdom App
