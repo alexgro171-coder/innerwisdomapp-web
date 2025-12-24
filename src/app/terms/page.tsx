@@ -49,7 +49,7 @@ export default function TermsOfService() {
                 <p>
                   These Terms of Service (&quot;Terms&quot;) govern your use of the Inner Wisdom 
                   mobile application and related services (collectively, the &quot;Service&quot;) 
-                  provided by Your Company Name Ltd. (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
+                  provided by Inner Wisdom Hub FZO (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
                 </p>
                 <p className="mt-4">
                   By creating an account or using the Service, you represent that you are 
@@ -168,7 +168,7 @@ export default function TermsOfService() {
                   All content, features, and functionality of Inner Wisdom—including 
                   but not limited to text, graphics, logos, icons, images, audio, 
                   software, and the underlying code—are the exclusive property of 
-                  Your Company Name Ltd. or its licensors and are protected by 
+                  Inner Wisdom Hub FZO or its licensors and are protected by 
                   international copyright, trademark, and other intellectual property laws.
                 </p>
                 <p className="mt-4">
@@ -232,7 +232,7 @@ export default function TermsOfService() {
                   9. Indemnification
                 </h2>
                 <p>
-                  You agree to indemnify and hold harmless Your Company Name Ltd. 
+                  You agree to indemnify and hold harmless Inner Wisdom Hub FZO 
                   from any claims, damages, losses, or expenses (including reasonable 
                   attorneys&apos; fees) arising from:
                 </p>
@@ -309,7 +309,7 @@ export default function TermsOfService() {
                 </h2>
                 <p>
                   These Terms, together with our Privacy Policy, constitute the entire 
-                  agreement between you and Your Company Name Ltd. regarding the Service 
+                  agreement between you and Inner Wisdom Hub FZO regarding the Service 
                   and supersede any prior agreements.
                 </p>
               </section>
@@ -322,7 +322,7 @@ export default function TermsOfService() {
                   For questions about these Terms, please contact us:
                 </p>
                 <div className="mt-4 rounded-xl border border-surface-light bg-surface p-6">
-                  <p className="font-medium text-text-primary mb-2">Your Company Name Ltd.</p>
+                  <p className="font-medium text-text-primary mb-2">Inner Wisdom Hub FZO</p>
                   <p className="text-text-secondary">
                     Email:{" "}
                     <a href="mailto:support@innerwisdomapp.com" className="text-gold hover:text-gold-light">

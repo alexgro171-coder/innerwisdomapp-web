@@ -99,7 +99,7 @@ export function Footer() {
             © {currentYear} Inner Wisdom App. All rights reserved.
           </p>
           <p className="mt-2 text-xs text-text-muted">
-            A product of Your Company Name Ltd.
+            A product of Inner Wisdom Hub FZO
           </p>
         </div>
       </div>
